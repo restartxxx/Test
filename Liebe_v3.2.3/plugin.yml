@@ -1,0 +1,49 @@
+name: Liebe
+main: ServerLoveMCPE\Main
+version: 3.2.3
+api: 2.0.0
+load: POSTWORLD
+author: TheDeibo, ratchetgame98, and, The Plugin Community!
+description: Add a little romance to your server!
+commands:
+ serverliebe:
+  description: §aPlugin Informationen
+  usage: "§a/serverliebe."
+  aliases: [sl, loveserver]
+  permission: serverlovemcpe.serverlove
+ liebe:
+  description: §a Liebe einen Spieler
+  usage: "§a/liebe <Spieler>"
+  aliases: [l, fancy, marry, propose]
+  permission: serverlovemcpe.love
+ schluss:
+  description: §a Schluss machen
+  usage: "§a/schluss <Spieler>"
+  aliases: [break, dump]
+  permission: serverlovemcpe.breakup
+  permission: serverlovemcpe.breakup
+ nolove:
+  description: §a Liebe ein/aus.
+  usage: "§a/nolove <an | aus>"
+  aliases: [nl]
+  permission: serverlovemcpe.nolove
+ kuss:
+  description: §a Gebe einem Spieler einen Kuss.
+  usage: "§a/kuss <Spieler>"
+  permission: serverlovemcpe.kuss
+permissions:
+ serverlovemcpe.serverlove:
+  description: "§aDisplays Plugin Infomation"
+  default: true
+ serverlovemcpe.love:
+  description: "§aAllows the user to love another player"
+  default: true
+ serverlovemcpe.breakup:
+  description: "§aAllows the user to breakup with another player"
+  default: true
+ serverlovemcpe.nolove:
+  description: "§aAllows the user to be / not to be loved."
+  default: true
+ serverlovemcpe.kuss:
+  description: "§aErlaube zu Knutschen."
+  default: true

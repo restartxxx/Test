@@ -1,0 +1,6 @@
+name: Mystery
+author: BlawoHD
+main: BlawoHD\Dreambuild\Main
+version: 1.0.1
+api: 2.1.0
+load: STARTUP

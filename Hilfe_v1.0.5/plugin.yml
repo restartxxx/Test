@@ -1,0 +1,20 @@
+name: Hilfe
+main: hoyinm\HelpOp\HelpOp
+version: 1.0.5
+api: 1.9.0
+author: hoyinm
+website: http://www.cybercube-hk.com
+
+commands:
+  helpop:
+    description: Tell OP something
+    usage: /helpop <message>
+    permission: helpop.command
+  checkop:
+    description: Check if there are ops in the server
+    usage: /checkop
+    permission: helpop.command
+permissions:
+  helpop.command:
+    default: true
+    description: Allows to do helpop command
