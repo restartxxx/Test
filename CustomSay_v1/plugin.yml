@@ -1,7 +1,7 @@
 name: CustomSay
 main: CustomSay\Main
 version: 1.0
-api: [2.1.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 author: CookieCode
 description: Broadcast a message with any tag !
 commands:
