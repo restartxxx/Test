@@ -1,0 +1,21 @@
+name: EconomySell
+main: onebone\economysell\EconomySell
+version: "2.0.7"
+api: [1.12.0]
+author: onebone
+depend: [EconomyAPI]
+
+permissions:
+ economysell.*:
+  description: Includes all permission for EconomySell
+  children:
+   economysell.sell.*:
+    description: Includes all permission related to managing sell center
+    children:
+     economysell.sell.sell:
+      description: Allows player to sell items
+      default: true
+     economysell.sell.create:
+      description: Allows player to create sell center
+     economysell.sell.remove:
+      description: Allows player to remove sell center
