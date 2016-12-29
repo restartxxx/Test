@@ -1,7 +1,7 @@
 name: DreambuildChat
 main: ChatToolsPro\Main
 version: 1.3
-api: [1.0.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 load: POSTWORLD
 author: paetti
 description: Chat Tools by paetti.
