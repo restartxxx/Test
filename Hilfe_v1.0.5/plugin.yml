@@ -1,7 +1,7 @@
 name: Hilfe
 main: hoyinm\HelpOp\HelpOp
 version: 1.0.5
-api: 1.9.0
+api: 1.0.0, 2.0.0, 3.0.0-ALPHA1
 author: hoyinm
 website: http://www.cybercube-hk.com
 
