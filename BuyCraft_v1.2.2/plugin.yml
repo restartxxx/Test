@@ -2,7 +2,7 @@ name: BuyCraft
 main: buycraft\BuyCraft
 version: 1.2.2
 author: Falkirks
-api: [1.0.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 load: POSTWORLD
 permissions:
  buycraft:
