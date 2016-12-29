@@ -1,6 +1,6 @@
 name: MagicServer
 version: 1.0.1
-api: [2.0.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 main: kvetinac97\Main
 author: kvetinac97
 description: "Makes your server full of magic!"
