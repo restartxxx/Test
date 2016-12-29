@@ -1,0 +1,38 @@
+name: SkinChanger
+api: 2.0.0
+version: 1.3.8
+author: SalmonDE
+authors: [Aericio, KairusDarkSeeker]
+main: SalmonDE\Skin
+website: https://salmonde.de/
+commands:
+  changeskin:
+    permission: skinchanger.cmd.changeskin
+    description: Lässt dich deinen Skin im Spiel wechseln
+    usage: /changeskin [SkinName] <Spieler>
+  changecape:
+    permission: skinchanger.cmd.changecape
+    description: Lässt dich deinen Umhang im Spiel wechseln
+    usage: /changecape [UmhangName] <Spieler>
+  saveskin:
+    permission: skinchanger.cmd.saveskin
+    description: Lässt dich den Skin eines Spielers in der skins.json Datei speichern
+    usage: /saveskin [Spieler]
+  skins:
+    permission: skinchanger.cmd.skins
+    description: Zeigt dir die Skins in der skins.json Datei an
+    usage: /skins
+    default: true
+permissions:
+  skinchanger:
+    children:
+      skinchanger.bypass:
+        description: This will let you bypass the skin changing on join if it is enabled
+      skinchanger.cmd:
+        children:
+          skinchanger.cmd.changeskin:
+            default: op
+          skinchanger.cmd.changecape:
+            default: op
+          skinchanger.cmd.skins:
+            default: op

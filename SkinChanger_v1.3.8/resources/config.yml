@@ -1,0 +1,27 @@
+# Available languages:
+# eng => English,
+# deu => Deutsch,
+# rus => Russian,
+Language: eng
+# Enable auto updating
+Auto-Update: true
+# Enable changing skins of players on join
+JoinSkins: false
+# Temporary save player skins so they can be used for /changeskin
+TempSavePlayerSkins: true
+# Check if skin could be changed on join
+CheckSkin: false
+# Time in seconds when the check should begin
+SkinCheckTime: 5
+RemoveCapeOnJoin: true
+# You must have PurePerms for this to work!
+Rank-Specific-Capes: true
+Rank-Capes:
+  Owner: MineconCape2016
+  Admin: MineconCape2011
+  Architekt: MineconCape2013
+  Moderator: MineconCape2013
+  Spieler: MineconCape2012
+  VIP: MineconCape2015
+  YouTuber: MineconCape2015
+  ClearSky: MineconCape2011

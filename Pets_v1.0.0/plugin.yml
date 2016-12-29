@@ -1,0 +1,5 @@
+name: Pets
+author: BlawoHD
+version: 1.0.0 
+main: pets\main
+api: 2.1.0
