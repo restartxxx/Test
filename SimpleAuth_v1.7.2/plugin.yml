@@ -1,7 +1,7 @@
 name: SimpleAuth
 main: SimpleAuth\SimpleAuth
 version: 1.7.2
-api: 2.0.0
+api: 1.0.0, 2.0.0, 3.0.0-ALPHA1
 load: STARTUP
 author: PocketMine Team
 authors: [shoghicp]
