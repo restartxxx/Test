@@ -1,0 +1,10 @@
+name: Friends
+api: 1.14.0
+version: 1.0
+main: Bluplayz\Friends
+author: Bluplayz
+website: http://youtube.com/Bluplayz
+commands:
+    friend:
+        description: FreundesSystem
+        aliases: [f, freunde, friends]

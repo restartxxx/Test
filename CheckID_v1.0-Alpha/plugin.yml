@@ -1,0 +1,9 @@
+name: CheckID
+author: XxD7omGamer
+main: CheckID\Main
+api: [2.0.0]
+description: If player type " /id command" the plugin will send the id block
+version: 1.0-Alpha
+commands:
+            id:
+              description: Sehe die ID eines Items

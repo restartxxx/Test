@@ -1,0 +1,14 @@
+name: FactionsPro
+author: Tethered_
+description: A Plugin For Easily Managing Factions
+version: 1.6.3
+main: FactionsPro\FactionMain
+api: [1.12.0]
+commands:
+  f:
+    description: use /f help for all parameters
+    permission: f.command
+permissions:
+  f.command:
+    default: true
+    description: "Allow use of all faction commands"
