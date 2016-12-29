@@ -2,9 +2,7 @@ name: EconomyAPI
 main: onebone\economyapi\EconomyAPI
 version: "2.0.9"
 author: onebone
-api:
-- 2.0.0
-
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 permissions:
  economyapi.*:
   default: op
