@@ -3,5 +3,5 @@ name: DreamBan
 main: bansystem\BanSystem
 version: 2.0.9
 author: QueenMC
-api: [2.0.0, 2.1.0, 2.2.0, 2.3.0, 2.4.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 description: A ban system that allows to temporarily/permanently ban/mute/block and kick players/IP address.
