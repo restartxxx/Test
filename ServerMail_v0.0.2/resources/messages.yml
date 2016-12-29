@@ -1,0 +1,27 @@
+## English strings
+messages:
+    count: "Du hast %1$d Nachrichten"
+    
+    cleared: "Alle Nachrichten geloescht"
+    
+    sent: "Nachricht gesendet!"
+    similar: "Nicht Spammen!"
+    no_player: "%1$s ist nicht registriert!"
+    too_many: "Nachrichten Limit zu %1$s erreicht!"
+    
+    new_message: "%1$s hat dir eine Nachricht gesendet!"
+    
+    not_allowed: "Fehlende Berechtigung."
+ 
+commands:
+    description: "Sends mail to other players."
+    names:
+        mail: "mail"
+        read: "read"
+        clear: "clear"
+        send: "send"
+        sendall: "sendall"
+    usage:
+        usage: "Usage"
+        player: "player"
+        message: "message"

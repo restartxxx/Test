@@ -1,0 +1,6 @@
+name: UnendlichSlots
+main: BlawoHD\UnendlichSlots\Main
+version: 1.0.0
+api: 2.1.0
+load: POSTWORLD
+author: BlawoHD
