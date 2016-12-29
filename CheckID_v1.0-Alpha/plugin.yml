@@ -1,7 +1,7 @@
 name: CheckID
 author: XxD7omGamer
 main: CheckID\Main
-api: [2.0.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 description: If player type " /id command" the plugin will send the id block
 version: 1.0-Alpha
 commands:
