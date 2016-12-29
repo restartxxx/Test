@@ -4,7 +4,7 @@ version: 3.1.0
 load: STARTUP
 enable: STARTUP
 author: DarkWav
-api: [2.0.0,1.0.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 commands:
       shadowanticheat:
            description: Shows ShadowAntiCheat version
