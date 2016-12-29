@@ -1,7 +1,7 @@
 name: CommandRepeater
 main: CommandRepeater\Main
 version: 1.0.1
-api: 1.8.0
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 author: iksaku
 
 permissions:
