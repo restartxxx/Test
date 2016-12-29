@@ -73,7 +73,7 @@ class MainClass extends PluginBase implements Listener{
 					return true;
 				}else{
 					if(!is_file($this->getDataFolder()."players/lastip/".$name[0]."/".$name.".yml")){
-						$sender->sendMessage(TextFormat::YELLOW."[Alias] Error: Player does not exist!");
+						$sender->sendMessage(TextFormat::YELLOW."[Alias] Diesen Spieler gibt es nicht!");
 						return true;
 					}else{
 						$lastip = new Config($this->getDataFolder()."players/lastip/".$name[0]."/".$name.".yml");
@@ -81,11 +81,11 @@ class MainClass extends PluginBase implements Listener{
 						$file = new Config($this->getDataFolder()."players/ip/".$ip[0]."/".$ip.".txt");
 						$names = $file->getAll(true);
 						if($names == null){
-							$sender->sendMessage(TextFormat::YELLOW."[Alias] Error: Player does not exist!");
+							$sender->sendMessage(TextFormat::YELLOW."[Alias] Diesen Spieler gibt es nicht!");
 							break;
 						}else{
 							$names = implode(', ', $names);
-							$sender->sendMessage(TextFormat::GREEN."[Alias] Showing alias of ".$name."...");
+							$sender->sendMessage(TextFormat::GREEN."Zeige Alias von: ".$name."...");
 							$sender->sendMessage(TextFormat::BLUE."[Alias] ".$names."");
 							return true;
 						}
