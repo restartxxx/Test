@@ -1,0 +1,11 @@
+---
+Enabled: true
+# Players to not log: Format: NAME: true
+ExamplePlayer: true
+# Blocks to ignore: Format: BLOCK: true
+Dirt: true
+Bedrock: true
+# When to delete old data(days): Default: 7
+DaysOld: 7
+...
+

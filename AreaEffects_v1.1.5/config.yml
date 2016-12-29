@@ -1,0 +1,107 @@
+---
+grill:
+  level: newhub
+  pos1:
+    x: 156
+    "y": 64
+    z: 123
+  pos2:
+    x: 154
+    "y": 65
+    z: 126
+  effect:
+    id: "12"
+    duration: 200
+    amplifier: 5
+    show: false
+trampolin:
+  level: newhub
+  pos1:
+    x: 205
+    "y": 66
+    z: 106
+  pos2:
+    x: 212
+    "y": 67
+    z: 100
+  effect:
+    id: 8
+    duration: 60
+    amplifier: 10
+    show: false
+ballon:
+  level: newhub
+  pos1:
+    x: 141
+    "y": 82
+    z: 105
+  pos2:
+    x: 133
+    "y": 86
+    z: 97
+  effect:
+    id: 10
+    duration: 200
+    amplifier: 1
+    show: false
+ballon2:
+  level: newhub
+  pos1:
+    x: 141
+    "y": 82
+    z: 105
+  pos2:
+    x: 133
+    "y": 86
+    z: 97
+  effect:
+    id: 23
+    duration: 200
+    amplifier: 2
+    show: false
+trampolinregen:
+  level: newhub
+  pos1:
+    x: 204
+    "y": 67
+    z: 106
+  pos2:
+    x: 211
+    "y": 66
+    z: 100
+  effect:
+    id: 10
+    duration: 200
+    amplifier: 1
+    show: false
+eislaufen:
+  level: newhub
+  pos1:
+    x: 116
+    "y": 64
+    z: 80
+  pos2:
+    x: 116
+    "y": 64
+    z: 127
+  effect:
+    id: 1
+    duration: 200
+    amplifier: 29
+    show: false
+kitpvp_spawn:
+  level: KitPvP
+  pos1:
+    x: 98
+    "y": 48
+    z: 151
+  pos2:
+    x: 116
+    "y": 40
+    z: 135
+  effect:
+    id: 10
+    duration: 20
+    amplifier: 255
+    show: false
+...

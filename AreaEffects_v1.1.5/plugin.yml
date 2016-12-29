@@ -1,0 +1,16 @@
+name: AreaEffects
+main: AreaEffects\Main
+version: 1.1.5
+api: [1.13.0, 2.0.0]
+load: STARTUP
+authors: [Rspuds,thebigsmileXD]
+description: Apply effects in set areas
+commands:
+  ae:
+    description: All area effects commands
+    usage: "/ae create <areaname> <id> [amplifier] [duration] [visible] | /ae list | /ae remove"
+    permission: ae.commands.ae
+permissions:
+  ae.commands.ae:
+    default: op
+    description: "Permission for all /ae commands"

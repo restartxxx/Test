@@ -1,0 +1,16 @@
+name: CustomSay
+main: CustomSay\Main
+version: 1.0
+api: [2.1.0]
+author: CookieCode
+description: Broadcast a message with any tag !
+commands:
+ customsay:
+  description: Broadcast a Message with any tag
+  aliases: [cs]
+  usage: "/cs <message>"
+  permission: cs.customsay
+permissions:
+ cs.customsay:
+  description: "Broadcast a Message with any Tag"
+  default: op
