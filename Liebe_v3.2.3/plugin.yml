@@ -1,7 +1,7 @@
 name: Liebe
 main: ServerLoveMCPE\Main
 version: 3.2.3
-api: 2.0.0
+api: 1.0.0, 2.0.0, 3.0.0-ALPHA1
 load: POSTWORLD
 author: TheDeibo, ratchetgame98, and, The Plugin Community!
 description: Add a little romance to your server!
