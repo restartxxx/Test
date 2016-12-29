@@ -1,7 +1,7 @@
 name: Kommando
 main: CommandTracker\CommandTracker
 version: "1.3"
-api: [1.10.0]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 load: STARTUP
 author: ScottHandley Edit by QueenMC
 description: Logs commands issued by players and console operators. Censors commands for inappropriate language.
