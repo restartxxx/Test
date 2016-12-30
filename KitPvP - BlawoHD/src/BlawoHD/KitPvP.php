@@ -1,6 +1,6 @@
 <?php
 
-namespace abxyHD;
+namespace BlawoHD;
 
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
