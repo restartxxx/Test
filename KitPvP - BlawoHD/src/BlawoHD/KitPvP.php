@@ -55,8 +55,8 @@ class KitPvP extends PluginBase implements Listener {
 				$TargetFile = new Config($this->getDataFolder()."Players/".strtolower($name{0})."/".strtolower($name).".yml", Config::YAML);
 							
 				$targetcoins = $TargetFile->get("Coins");
-				$newCoins = $targetcoins + 10;
-				$addedcoins = 10;
+				$newCoins = $targetcoins + 5;
+				$addedcoins = 5;
 				if($killer->hasPermission("kitpvp.doublecoins") || $killer->isOP()){
 					$newCoins = $newCoins + 5;
 					$addedcoins = 10;
