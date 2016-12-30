@@ -102,7 +102,7 @@ class KitPvP extends PluginBase implements Listener {
             case "kits":
 				
 				$sender->sendMessage("§7=_=_=_=_=_=_=_=_=_");
-				$sender->sendMessage(" §7- §8Wikinger §7[§aGekauft§7]");
+				$sender->sendMessage(" §7- §8Starter Kit §7[§aGekauft§7]");
 				
 				if(in_array("Ninja", $kits)){
 					$sender->sendMessage(" §7- §bNinja §7[§aGekauft§7]");
@@ -195,7 +195,7 @@ class KitPvP extends PluginBase implements Listener {
 				break;
             case "kit":
 				if(!empty($args[0])){
-					if (strtolower($args[0]) != "wikinger" &&
+					if (strtolower($args[0]) != "Starter" &&
 							strtolower($args[0]) != "ninja" &&
 							strtolower($args[0]) != "mario" &&
 							strtolower($args[0]) != "archer" &&
@@ -207,12 +207,12 @@ class KitPvP extends PluginBase implements Listener {
 						$sender->sendMessage($this->prefix . "§cDas Kit §e$args[0] §cgibt es nicht oder es liegt ein Schreibfehler vor.");
 						$sender->sendMessage("§6-> §f/kits");
 					} else {
-						###WIKINGER###
-						if (strtolower($args[0] == "wikinger")) {
+						###STARTER KIT###
+						if (strtolower($args[0] == "Starter")) {
 							if($sender instanceof Player){
 								$sender->removeAllEffects();
 								$sender->getInventory()->clearAll();
-								$sender->sendMessage($this->prefix . "§fKit §o§l§8Wikinger §r§ferhalten");
+								$sender->sendMessage($this->prefix . "§fKit §o§l§8Starter §r§ferhalten");
 								$sender->getInventory()->setHelmet(Item::get(306, 0, 1));
 								$sender->getInventory()->setChestplate(Item::get(299, 0, 1));
 								$sender->getInventory()->setLeggings(Item::get(300, 0, 1));
