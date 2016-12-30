@@ -1,0 +1,41 @@
+name: KitPvP
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
+version: 1.0
+main: abxyHD\KitPvP
+author: BlawoHD
+commands:
+    kits:
+        description: Listet dir die Kits auf.
+    kit:
+        description: Command fuer die KitAuswahl.
+    spawn:
+        description: Teleportiert dich zum Spawn. (Rechnet dir einen Tod an!)
+    mode:
+        description: TEAMINTERN.
+        aliases: [m]
+    feed:
+        description: Fuellt die Hungerleiste.
+    heal:
+        description: Fuellt die Lebensanzeige.
+    spc:
+        description: TEAMINTERN.
+    cinv:
+        description: InventarClear.
+    gethealth:
+        description: get Health.
+    coins:
+        description: get coins.
+    setcoins:
+        description: set coins.
+    addcoins:
+        description: add coins.
+permissions:
+    vanish.use:
+        description: Permission um den Vanish Command zu benutzen.
+        default: false
+    kits.vip:
+        description: VIP-Kits nutzen.
+        default: false
+    kits.ultra:
+        description: UltraKits nutzen.
+        default: false
