@@ -1,7 +1,7 @@
 name: KitPvP
 api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
 version: 1.0
-main: abxyHD\KitPvP
+main: BlawoHD\KitPvP
 author: BlawoHD
 commands:
     kits:
