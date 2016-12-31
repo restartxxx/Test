@@ -32,12 +32,12 @@ class BanCommand extends Command {
             if (count($args) == 1) {
                 if ($player != null) {
                     $banList->addBan($player->getName(), null, null, $sender->getName());
-                    $player->kick(TextFormat::RED . "Du wurdest gebannt.§7\n Du kannst auf §aweb.dreambuild.de §7einen EntbannungsAntrag stellen!", false);
+                    $player->kick(TextFormat::RED . "Du wurdest gebannt" . TextFormat::GRAY . "\nDu kannst auf " . TextFormat::GREEN . "web.dreambuild.de " . TextFormat::GRAY . "einen EntbannungsAntrag stellen!", false);
                     $playerName = $player->getName();
                 } else {
                     $banList->addBan($args[0], null, null, $sender->getName());
                 }
-                $sender->getServer()->broadcastMessage("§7Der Spieler " . $playerName . TextFormat::RED . "§7 wurde von §a" . $sender->getName() . " §cgebannt§7.");
+                $sender->getServer()->broadcastMessage(TextFormat::GRAY . "Der Spieler " . TextFormat::RED . $playerName . TextFormat::GRAY . " wurde von " . TextFormat::GREEN . $sender->getName() . TextFormat::RED . " gebannt.");
             } else if (count($args) >= 2) {
                 $reason = "";
                 for ($i = 1; $i < count($args); $i++) {
