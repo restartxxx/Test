@@ -107,7 +107,7 @@ class KitPvP extends PluginBase implements Listener {
 				if(in_array("Ninja", $kits)){
 					$sender->sendMessage(" §7- §bNinja §7[§aGekauft§7]");
 				} else {
-					$sender->sendMessage(" §7- §bNinja §7[§c150 coins§7]");
+					$sender->sendMessage(" §7- §bNinja §7[§c500 coins§7]");
 				}
 				if(in_array("Mario", $kits)){
 					$sender->sendMessage(" §7- §cMario §7[§aGekauft§7]");
@@ -195,7 +195,7 @@ class KitPvP extends PluginBase implements Listener {
 				break;
             case "kit":
 				if(!empty($args[0])){
-					if (strtolower($args[0]) != "Starter" &&
+					if (strtolower($args[0]) != "starter" &&
 							strtolower($args[0]) != "ninja" &&
 							strtolower($args[0]) != "mario" &&
 							strtolower($args[0]) != "archer" &&
@@ -208,7 +208,7 @@ class KitPvP extends PluginBase implements Listener {
 						$sender->sendMessage("§6-> §f/kits");
 					} else {
 						###STARTER KIT###
-						if (strtolower($args[0] == "Starter")) {
+						if (strtolower($args[0] == "starter")) {
 							if($sender instanceof Player){
 								$sender->removeAllEffects();
 								$sender->getInventory()->clearAll();
@@ -230,9 +230,9 @@ class KitPvP extends PluginBase implements Listener {
 							
 							if(!in_array("Ninja", $kits)){
 								
-								if($coins >= 150){
+								if($coins >= 500){
 									
-									$newCoins = $coins - 150;
+									$newCoins = $coins - 500;
 									
 									$kits[] = "Ninja";
 									$PlayerFile->set("Kits", $kits);
@@ -240,16 +240,16 @@ class KitPvP extends PluginBase implements Listener {
 									
 									$PlayerFile->save();
 									
-									$sender->sendMessage($this->prefix."§aDu hast Erfolgreich das Kit §bNinja §afür§6 150 coins §agekauft, du kannst es nun jederzeit mit dem Command §f/kit Ninja §abenutzen!");
+									$sender->sendMessage($this->prefix."§aDu hast Erfolgreich das Kit §bNinja §afür§6 500 coins §agekauft, du kannst es nun jederzeit mit dem Command §f/kit Ninja §abenutzen!");
 									
 								} else {
 									$sender->sendMessage($this->prefix."§cDu hast nicht genügend Coins um das Kit §bNinja §czu kaufen");
 									
-									$missingcoins = 150 - $coins;
+									$missingcoins = 500 - $coins;
 									
 									$sender->sendMessage($this->prefix."Aktuelle Coins§7: §6".$coins);
 									$sender->sendMessage($this->prefix."Fehlende Coins§7: §6".$missingcoins);
-									$sender->sendMessage($this->prefix."Benötigte Coins§7:§6 150");
+									$sender->sendMessage($this->prefix."Benötigte Coins§7:§6 500");
 								}
 								
 							} else { //gekauft
@@ -257,9 +257,8 @@ class KitPvP extends PluginBase implements Listener {
 									$sender->removeAllEffects();
 									$sender->getInventory()->clearAll();
 									$sender->sendMessage($this->prefix . "§fKit §o§l§bNinja §r§ferhalten");
-									$sender->getInventory()->addItem(Item::get(276, 1010, 1));
+									$sender->getInventory()->addItem(Item::get(267, 0, 1));
 									$sender->getInventory()->addItem(Item::get(322, 0, 2));
-									$sender->getInventory()->addItem(Item::get(260, 0, 20));
 									$sender->getInventory()->setHelmet(Item::get(298, 0, 1));
 									$sender->getInventory()->setChestplate(Item::get(299, 0, 1));
 									$sender->getInventory()->setLeggings(Item::get(300, 0, 1));
