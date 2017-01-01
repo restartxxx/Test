@@ -47,7 +47,7 @@ class BanCommand extends Command {
                 $reason = substr($reason, 0, strlen($reason) - 1);
                 if ($player != null) {
                     $banList->addBan($player->getName(), $reason, null, $sender->getName());
-                    $player->kick(TextFormat::RED . "§7Du wurdest wegen §c" . $reason . TextFormat::RED . " gebannt§7.\nDu kannst auf§a web.dreambuild.de§7 einen Entbannungsantrag stellen.", false);
+                    $player->kick(TextFormat:RED . "Du wurdest wegen gebannt. Grund: " . TextFormat::RED . $reason . TextFormat::GRAY . "\nDu kannst auf " . TextFormat::GREEN . "web.dreambuild.de " . TextFormat::GRAY. "einen Entbannungsantrag stellen.", false);
                     $playerName = $player->getName();
                 } else {
                     $banList->addBan($args[0], $reason, null, $sender->getName());
