@@ -37,7 +37,7 @@ class BanCommand extends Command {
                 } else {
                     $banList->addBan($args[0], null, null, $sender->getName());
                 }
-                $sender->getServer()->broadcastMessage(TextFormat::GRAY . "Der Spieler " . TextFormat::RED . $playerName . TextFormat::GRAY . " wurde von " . TextFormat::GREEN . $sender->getName() . TextFormat::RED . " gebannt.");
+                $sender->getServer()->broadcastMessage(TextFormat::GRAY . "Der Spieler " . TextFormat::RED . $playerName . TextFormat::GRAY . " wurde von " . TextFormat::GREEN . $sender->getName() . TextFormat::GRAY . " gebannt.");
             } else if (count($args) >= 2) {
                 $reason = "";
                 for ($i = 1; $i < count($args); $i++) {
@@ -52,7 +52,7 @@ class BanCommand extends Command {
                 } else {
                     $banList->addBan($args[0], $reason, null, $sender->getName());
                 }
-                $sender->getServer()->broadcastMessage("§7Der Spieler §c" . $playerName . TextFormat::RED . " §7wurde von §a" . $sender->getName() . " §7wegen " . $reason . TextFormat::RED . " gebannt§7.");
+                $sender->getServer()->broadcastMessage(TextFormat::GRAY . "Der Spieler " . TextFormat::RED . $playerName . TextFormat::GRAY . " wurde von " . TextFormat::GREEN . $sender->getName() . TextFormat::GRAY . " gebannt. Grund: " . TextFormat::RED: $reason);
             }
         } else {
             $sender->sendMessage(Translation::translate("noPermission"));
